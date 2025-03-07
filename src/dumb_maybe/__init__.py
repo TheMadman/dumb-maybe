@@ -141,12 +141,9 @@ class Except(Maybe):
         return self
 
     def catch(self, exception_class, f):
-        try:
-            if isinstance(self.__e, exception_class):
-                return maybe(f(self.__e))
-            return self
-        except Exception as e:
-            return Except(e)
+        # if a catch raises, just raise
+        if isinstance(self.__e, exception_class):
+            return maybe(f(self.__e))
 
     def value(self, default=None):
         return default
@@ -214,3 +211,8 @@ def attr(name):
     """
     return lambda obj: getattr(obj, name)
 
+def reraise(e):
+    """
+    Takes an exception and raises it. Intended to be passed to maybe.catch().
+    """
+    raise e
