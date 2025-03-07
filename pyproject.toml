@@ -1,0 +1,20 @@
+[project]
+name = "dumb-maybe"
+version = "0.0.1"
+authors = [
+  { name="Marcus Harrison", email="marcus@harrisonland.co.uk" },
+]
+description = "A Very Dumb Maybe Type"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: LicenseRef-Public-Domain",
+]
+license = "Public Domain"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/the_madman/dumb-maybe"
+Issues = "https://github.com/the_madman/dumb-maybe/issues"
