@@ -20,5 +20,4 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project.urls]
-Homepage = "https://github.com/the_madman/dumb-maybe"
-Issues = "https://github.com/the_madman/dumb-maybe/issues"
+Homepage = "https://github.com/TheMadman/dumb-maybe"
