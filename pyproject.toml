@@ -10,10 +10,14 @@ requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
-    "License :: LicenseRef-Public-Domain",
 ]
+
 license = "Public Domain"
 license-files = ["LICEN[CS]E*"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project.urls]
 Homepage = "https://github.com/the_madman/dumb-maybe"
