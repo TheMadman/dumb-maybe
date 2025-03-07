@@ -12,7 +12,6 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
-license = "Public Domain"
 license-files = ["LICEN[CS]E*"]
 
 [build-system]
